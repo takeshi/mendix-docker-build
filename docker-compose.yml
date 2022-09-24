@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:14
+    container_name: postgres
+    ports:
+      - 5433:5432
+    volumes:
+      - db-store:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=postgres
+  mendix:
+    depends_on:
+      - db
+    image: mymendix:latest
+    ports:
+      - 8080:8080
+    environment:
+      - ADMIN_PASSWORD=P@assport12345
+      - DATABASE_ENDPOINT=postgres://postgres:postgres@db:5432/postgres
+      - MX_BudgetCalculator_TitleConstant=OverrideValue
+volumes:
+  db-store:
+

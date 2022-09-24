@@ -1,0 +1,40 @@
+.progress {
+    height: 20px;
+    margin-bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    .progress-bar {
+        box-shadow: none;
+    }
+}
+
+.budget-split {
+    &.brand-default .progress {
+        background-color: $brand-default;
+    }
+
+    &.brand-primary .progress {
+        background-color: $brand-primary;
+    }
+
+    &.brand-inverse .progress {
+        background-color: $brand-inverse;
+    }
+
+    &.brand-info .progress {
+        background-color: $brand-info;
+    }
+
+    &.brand-success .progress {
+        background-color: $brand-success;
+    }
+
+    &.brand-warning .progress {
+        background-color: $brand-warning;
+    }
+
+    &.brand-danger .progress {
+        background-color: $brand-danger;
+    }
+}

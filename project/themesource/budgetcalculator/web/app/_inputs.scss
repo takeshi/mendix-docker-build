@@ -1,0 +1,173 @@
+.form-control {
+    border: 1px solid $form-input-border-color;
+    border-radius: $border-radius-small;
+    padding: $form-input-padding-y $form-input-padding-x;
+    font-size: $font-base-size;
+    font-weight: $form-input-weight;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+    &::-webkit-input-placeholder {
+        color: #A5A5A5;
+    }
+}
+
+.form-control:focus {
+    border-color: $form-input-border-focus-color;
+    box-shadow: inset 0 0 0 1px $form-input-border-focus-color;
+}
+
+.form-control-currency {
+    display: flex;
+    flex-direction: row !important;
+    flex-flow: wrap;
+
+    .control-label {
+        order: 1;
+        width: 100%;
+    }
+
+    &:before {
+        content: "$";
+        order: 2;
+        color: $form-input-color;
+        font-size: $font-base-size;
+        border: 1px solid $form-input-border-color;
+        padding: 0.7em 1.2em;
+        border-radius: $border-radius-small 0 0 $border-radius-small;
+        transition: all ease-in-out 0.15s;
+    }
+
+    .form-control {
+        order: 3;
+        border-radius: 0 $border-radius-small $border-radius-small 0;
+        flex: 1;
+        border-left: 0;
+    }
+}
+
+.t-drop-zone {
+    .form-control-currency {
+        display: block;
+
+        &:before {
+            content: none;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+
+            &:before {
+                content: "$";
+                order: 2;
+                color: $form-input-color;
+                font-size: $font-base-size;
+                border: 1px solid $form-input-border-color;
+                padding: 0.7em 1.2em;
+                border-radius: $border-radius-small 0 0 $border-radius-small;
+                transition: all ease-in-out 0.15s;
+            }
+        }
+    }
+}
+
+.form-control.mx-dateinput-input {
+    border-right: 0;
+    border-radius: $border-radius-small 0 0 $border-radius-small;
+}
+
+.form-control-currency:focus-within {
+    &:before {
+        background: $brand-primary;
+        color: #fff;
+        border: 1px solid $form-input-border-focus-color;
+        border-right: 0;
+        box-shadow: inset 0 0 0 1px $form-input-border-focus-color;
+    }
+}
+
+.form-group {
+    .control-label {
+        color: $form-label-color;
+        font-size: $form-label-size;
+        font-weight: $form-label-weight;
+        margin-bottom: 8px;
+    }
+
+    margin-bottom: 16px;
+
+    &.mx-datepicker {
+        .form-control {
+            border-top-right-radius: 0;
+            border-right: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+.form-horizontal {
+    .control-label {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: left;
+        margin: 0;
+        font-weight: 400;
+        color: $font-base-color;
+        font-size: 16px;
+    }
+
+    div.form-control-static {
+        padding: 0;
+        border-bottom: 0;
+        font-weight: $semi-bold;
+        color: $form-label-color;
+        font-size: 16px;
+    }
+}
+
+.input-card {
+    background: #fff;
+    padding: 15px 0;
+    border-radius: 4px;
+    box-shadow: $box-shadow-small;
+}
+
+.input-currency {
+    div.form-control-static {
+        display: block;
+
+        &:before {
+            content: "$";
+        }
+    }
+}
+
+.display-currency {
+    &:before {
+        content: "$";
+        vertical-align: top;
+        font-size: 18px;
+        margin-right: 5px;
+        color: $font-base-color;
+        font-weight: normal;
+    }
+}
+
+.input-right {
+    div.form-control-static {
+        text-align: right;
+    }
+}
+
+.input-center {
+    div.form-control-static {
+        text-align: center;
+    }
+}
+
+.input-left {
+    div.form-control-static {
+        text-align: left;
+    }
+}

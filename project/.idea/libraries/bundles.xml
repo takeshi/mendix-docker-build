@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="bundles">
+    <CLASSES>
+      <root url="file://C:/Program Files/Mendix/9.17.0.51380/runtime/bundles" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/Program Files/Mendix/9.17.0.51380/runtime/bundles" />
+    </SOURCES>
+    <jarDirectory url="file://C:/Program Files/Mendix/9.17.0.51380/runtime/bundles" recursive="false" />
+    <jarDirectory url="file://C:/Program Files/Mendix/9.17.0.51380/runtime/bundles" recursive="false" type="SOURCES" />
+  </library>
+</component>

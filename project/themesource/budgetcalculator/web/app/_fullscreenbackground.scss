@@ -1,0 +1,64 @@
+.fullscreen-background {
+    position: relative;
+    height: calc(100vh - #{$topbar-minimalheight});
+    overflow: hidden;
+    background-color: #fff;
+
+    h1 {
+        font-size: 54px;
+        line-height: 1.1;
+        font-weight: $bold;
+        color: #fff;
+
+        @media (max-width: $screen-sm) {
+            font-size: 46px;
+        }
+
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.6;
+        background-color: #404040;
+        color: #fff;
+        display: inline;
+        padding: 0.5rem;
+
+        /* Needs prefixing */
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+
+    @media (max-width: $screen-sm) {
+        height: auto;
+        padding-bottom: 40vw;
+    }
+}
+
+.fullscreen-body {
+    padding-top: 5%;
+}
+
+.fullscreen-image {
+    background-size: cover;
+    background-image: url($bg-svg);
+    background-position: bottom center;
+    position: absolute;
+    width: 110%;
+    left: -5%;
+    right: -5%;
+    top: -$topbar-minimalheight;
+    height: 65%;
+
+    .t-drop-zone {
+        display: none;
+    }
+}
+
+.product-image {
+    z-index: 1;
+}
+
+.mx-scrollcontainer-toggleable .mx-scrollcontainer-wrapper {
+    position: relative;
+}

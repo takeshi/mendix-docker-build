@@ -1,0 +1,136 @@
+//== Gray Shades
+//## Different gray shades to be used for our variables and components
+$gray-darker: #222222;
+$gray-dark: #333333;
+$gray: #555555;
+$gray-light: #888888;
+$gray-primary: #D7D7D7;
+$gray-lighter: #EEEEEE;
+
+//== Step 1: Brand Colors
+$brand-default: #DDDDDD;
+$brand-primary: #3D93DD;
+$brand-inverse: #183344;
+$brand-info: #B2459D;
+$brand-success: #3DE191;
+$brand-warning: #F9D11A;
+$brand-danger: #E74C3C;
+
+// Used for other variables
+$default-border-color: $gray-primary;
+
+//== Step 3: Typography
+$font-family-import: "https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700";
+$font-family-base: "Open Sans", sans-serif;
+$font-base-size: 15px;
+$font-base-color: #777;
+$link-color: $brand-primary;
+$font-size-h1: 31px;
+$font-size-h2: 26px;
+$font-size-h3: 24px;
+$font-size-h4: 18px;
+$font-color-headers: $brand-inverse;
+$font-header-margin: 0;
+$font-weight-header: 600;
+$semi-bold: 600;
+$bold: 700;
+
+$spacing: 15px;
+
+//== Step 2: UI Customization
+
+// Topbar
+$topbar-bg: #FFFFFF;
+$navtopbar-border-color: $default-border-color;
+$topbar-border-color: $navtopbar-border-color;
+$topbar-appname-color: #FFFFFF;
+$topbar-appname-size: 15px;
+$topbar-minimalheight: 70px;
+$navtopbar-color: $font-base-color;
+$navbar-brand-name: $default-border-color;
+$brand-logo: "../../../resources/budgets.svg";
+$brand-logo-height: 39px;
+$brand-logo-width: 110px;
+
+
+// Sidebar
+$sidebar-bg: $brand-inverse;
+$navsidebar-color: #FFFFFF;
+$navsidebar-color-hover: $navsidebar-color;
+
+// Backgrounds
+$bg-color: #FFFFFF;
+$bg-color-secondary: #f4f4f4;
+$bg-svg: "data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 850'%3e%3cdefs%3e%3clinearGradient id='myGradient'%3e%3cstop offset='0' stop-color='%2371caf5'/%3e%3cstop offset='29%25' stop-color='%23088ddc'/%3e%3cstop offset='57%25' stop-color='%232628e5'/%3e%3cstop offset='100%25' stop-color='%23653fcc'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath d='M0 566s110.1 260 916.1 66 1162.3-16 1162.3-16v-616H0z' fill='url(%23myGradient)'/%3e%3c/svg%3e";
+
+// == Old variables used in theme customizer to the new lib variables
+$font-size-default: $font-base-size;
+$font-color-default: $font-base-color;
+$border-color-default: $default-border-color;
+$font-color-header: $font-color-headers;
+
+$border-radius-default: 6px;
+$border-radius-small: 2px;
+$box-shadow-default: -6px 6px 60px rgba(0, 0, 0, 0.24);
+$box-shadow-small: -1px 1px 5px rgba(0, 0, 0, 0.24);
+
+
+$form-input-border-color: #d2d2d2;
+$form-input-border-focus-color: $brand-primary;
+$form-input-padding-y: 10px;
+$form-input-padding-x: 12px;
+$form-input-weight: 400;
+$form-input-color: $brand-inverse;
+$form-label-weight: 600;
+$form-label-size: 14px;
+$form-label-color: #173344;
+
+$btn-border-radius: 50px;
+
+
+//button
+
+$link-color: #777;
+
+$btn-default-bg: #FFF;
+$btn-inverse-bg: $brand-inverse;
+$btn-primary-bg: $brand-primary;
+$btn-info-bg: $brand-info;
+$btn-success-bg: $brand-success;
+$btn-warning-bg: $brand-warning;
+$btn-danger-bg: $brand-danger;
+
+$btn-default-border-color: #2292D2;
+$btn-inverse-border-color: $btn-inverse-bg;
+$btn-primary-border-color: $btn-primary-bg;
+$btn-info-border-color: $btn-info-bg;
+$btn-success-border-color: $btn-success-bg;
+$btn-warning-border-color: $btn-warning-bg;
+$btn-danger-border-color: $btn-danger-bg;
+
+// Button Text Color
+$btn-default-color: $brand-primary;
+$btn-inverse-color: #FFF;
+$btn-primary-color: #FFF;
+$btn-info-color: #FFF;
+$btn-success-color: #fff;
+$btn-warning-color: #FFF;
+$btn-danger-color: #FFF;
+
+// Button Background Color
+$btn-default-bg-hover: $btn-default-border-color;
+$btn-inverse-bg-hover: mix($btn-inverse-bg, white, 80%);
+$btn-primary-bg-hover: mix($btn-primary-bg, black, 80%);
+$btn-info-bg-hover: mix($btn-info-bg, black, 80%);
+$btn-success-bg-hover: mix($btn-success-bg, black, 80%);
+$btn-warning-bg-hover: mix($btn-warning-bg, black, 80%);
+$btn-danger-bg-hover: mix($btn-danger-bg, black, 80%);
+$btn-link-bg-hover: $gray-lighter;
+
+$screen-xs: 480px;
+
+$screen-sm: 768px;
+
+$screen-md: 992px;
+
+$screen-lg: 1200px;

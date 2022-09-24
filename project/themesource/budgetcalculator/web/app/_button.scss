@@ -1,0 +1,103 @@
+.btn {
+    padding: 0.8em 1.4em;
+    text-transform: capitalize;
+    font-weight: $semi-bold;
+    border-radius: $border-radius-small;
+}
+
+.mx-datepicker {
+    .mx-button {
+        margin: 0;
+        padding: 0.77em 1.2em;
+        font-weight: normal;
+        border-width: 1px;
+        border-left: 0;
+        border-color: $brand-primary;
+        background: $brand-primary;
+        border-radius: 0 $border-radius-small $border-radius-small 0;
+        color: #fff;
+
+        &:hover, &:focus {
+            background: darken($brand-primary, 10%);
+            color: #fff;
+        }
+    }
+}
+
+.btn-gradient {
+    background-image: linear-gradient(-90deg, #2292D2 0%, #3C4ACB 100%);
+    border-color: #2292D2;
+
+    &:hover, &:focus {
+        background-image: linear-gradient(-90deg, rgba(34, 146, 210, 0.7) 0%, rgba(60, 74, 203, 0.7) 100%);
+        color: #fff;
+        border-color: #2292D2;
+    }
+}
+
+.btn-default {
+    &:hover, &:focus {
+        color: #fff;
+    }
+}
+
+.btn-tablerow {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &.btn-edit {
+        right: 20px;
+    }
+}
+
+.btn-shadow {
+    box-shadow: $box-shadow-default;
+}
+
+.btn-rounded {
+    border-radius: 50px;
+}
+
+.btn-row.mx-link {
+    padding: 15px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #d7d7d7;
+    color: $font-base-color;
+    transition: all 0.1s ease-in;
+    text-decoration: none;
+
+    .glyphicon {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        background-color: #f7f7f7;
+        color: $font-color-headers;
+    }
+}
+
+.mx-link {
+    &:hover {
+        color: $brand-primary;
+    }
+}
+
+.btn+.btn {
+    margin-left: 10px;
+}
+
+.amend-budget-buttons-container {
+    .btn+.btn {
+        margin-bottom: 0;
+    }
+}
+
+a[aria-disabled=false],
+button[aria-disabled=false] {
+    cursor: pointer;
+    pointer-events: all;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
